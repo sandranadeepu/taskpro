@@ -1,21 +1,23 @@
-import {USERS} from '../actions/types';
+import {RATING} from '../actions/types';
 
 
 const initialState={
-    users:[]
+
+    rating:[]
+ 
 };
 
 
 export default function(state=initialState,action){
         const {type,payload}=action;
-        // console.log(action,"pay22")
+        console.log(action,"pay22")
 
     switch (type){
-        case USERS:
-            // console.log(payload,"pay")
+        case RATING:
+            console.log(payload,"pay")
             return{
                 ...state,
-                users:payload
+                rating:payload
             }
         default :
             return state
